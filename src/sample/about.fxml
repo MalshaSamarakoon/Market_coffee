@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.about">
+   <children>
+      <ImageView fitHeight="790.0" fitWidth="556.0">
+         <image>
+            <Image url="@../img/covercontact.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="10.0" layoutY="156.0" prefHeight="53.0" prefWidth="492.0" style="-fx-background-color: #40010180;" text="  About" textFill="#e8e8e8">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="close" layoutX="526.0" layoutY="-1.0" onAction="#close_click" style="-fx-background-color: red;" text="X" textFill="WHITE" />
+      <JFXTextArea editable="false" focusColor="#400101" labelFloat="true" layoutX="49.0" layoutY="232.0" prefHeight="460.0" prefWidth="458.0" text="Ambrosia cafe is an urban oasis; a quiet getaway from the hustle and bustle in the middle of the ever-busy Colombo. A place where one can spend the day, enjoy a healthy dose of caffeine under the shade of gargantuan trees, secluded from the rush, listening to the sound of birds chirping and catchy jazz from a talented quartet. A fine selection of coffee, one that shouldn't be missed.&#10;Ambrosia Cafe is a startup which was created to cater to the true authentic cafe experience, by emphasizing on high-quality coffee, which has not been compromised regardless of the situation that the cafe went through. The true reason for the success of Ambrosia Cafe is its service, attracting customers to it since its inception. Moreover, the casual atmosphere, quality beverages, friendly staff and attentive service are the key factors of fame and what keeps urging Cafe Ambrosia's customers to come back and back again." unFocusColor="#400101">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
